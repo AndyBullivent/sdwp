@@ -1,0 +1,2 @@
+﻿<%@ Assembly Name="$SharePoint.Project.AssemblyFullName$" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MyStudentsEndPoint.aspx.cs" Inherits="Collabco.SussexDowns.WebParts.Layouts.Collabco.Services.MyStudentsEndPoint"%>

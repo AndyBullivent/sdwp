@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collabco.SussexDowns.WebParts", "Collabco.SussexDowns.WebParts\Collabco.SussexDowns.WebParts.csproj", "{F339DFFE-C352-4503-9AFC-9C69629A816A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F339DFFE-C352-4503-9AFC-9C69629A816A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

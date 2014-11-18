@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Collabco.SussexDowns.WebParts.MyStudents.MyStudents, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">My Students</property>
+        <property name="Description" type="string">My Students gives you the outstanding concerns raised by logged on user</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/collabco/icons/sso16.gif</property>
+        <property name="ChromeType" type="chrometype">None</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

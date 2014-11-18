@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="81ac6a23-aa09-40da-b707-5396d3893a0a" solutionId="81ac6a23-aa09-40da-b707-5396d3893a0a" resetWebServer="false" sharePointProductVersion="15.0" name="Collabco.SussexDowns.WebParts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b3689342-543e-45bd-b4a4-9e12d815fd6c" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="206df4b8-4df9-440b-910a-10a8bedcaf6c" />
+  </projectItems>
+</package>

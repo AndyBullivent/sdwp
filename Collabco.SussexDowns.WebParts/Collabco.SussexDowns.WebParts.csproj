@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F339DFFE-C352-4503-9AFC-9C69629A816A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Collabco.SussexDowns.WebParts</RootNamespace>
+    <AssemblyName>Collabco.SussexDowns.WebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="collabco.hub.webparts, Version=3.0.0.0, Culture=neutral, PublicKeyToken=626188aa9c54d824, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\collabco.hub.webparts\v4.0_3.0.0.0__626188aa9c54d824\collabco.hub.webparts.dll</HintPath>
+    </Reference>
+    <Reference Include="Collabco.Saturn, Version=3.0.0.0, Culture=neutral, PublicKeyToken=51926656f6255889, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Collabco.Saturn\v4.0_3.0.0.0__51926656f6255889\Collabco.Saturn.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LAYOUTS\Collabco\Settings\TileDatabaseSettings.aspx.cs">
+      <DependentUpon>TileDatabaseSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Settings\TileDatabaseSettings.aspx.designer.cs">
+      <DependentUpon>TileDatabaseSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyCourseAttendanceEndPoint.aspx.cs">
+      <DependentUpon>MyCourseAttendanceEndPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyCourseAttendanceEndPoint.aspx.designer.cs">
+      <DependentUpon>MyCourseAttendanceEndPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyRegistersEndPoint.aspx.cs">
+      <DependentUpon>MyRegistersEndPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyRegistersEndPoint.aspx.designer.cs">
+      <DependentUpon>MyRegistersEndPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyStudentsEndPoint.aspx.cs">
+      <DependentUpon>MyStudentsEndPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\Collabco\Services\MyStudentsEndPoint.aspx.designer.cs">
+      <DependentUpon>MyStudentsEndPoint.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCourseAttendance\MyCourseAttendance.cs" />
+    <Compile Include="MyRegister\MyRegister.cs" />
+    <Compile Include="MyStudents\MyStudents.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Features\Collabco.SussexDowns.WebParts\Collabco.SussexDowns.WebParts.feature">
+      <FeatureId>{b3689342-543e-45bd-b4a4-9e12d815fd6c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LAYOUTS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{206df4b8-4df9-440b-910a-10a8bedcaf6c}</SharePointProjectItemId>
+    </None>
+    <None Include="MyCourseAttendance\MyCourseAttendance.webpart" />
+    <None Include="MyCourseAttendance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4e8250c-67a6-412b-a83d-edfd01cdb189}</SharePointProjectItemId>
+    </None>
+    <None Include="MyRegister\MyRegister.webpart" />
+    <None Include="MyRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{453f6737-de67-40ae-9ecf-52a2f405890c}</SharePointProjectItemId>
+    </None>
+    <None Include="MyStudents\MyStudents.webpart" />
+    <None Include="MyStudents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bef7582d-1445-4c40-bc82-ec1c434dda99}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{81ac6a23-aa09-40da-b707-5396d3893a0a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Tile Settings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8de7be36-7dba-43b4-9727-925a2a1599e1}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Collabco.SussexDowns.WebParts\Collabco.SussexDowns.WebParts.Template.xml">
+      <DependentUpon>Collabco.SussexDowns.WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="LAYOUTS\Collabco\Settings\TileDatabaseSettings.aspx" />
+    <Content Include="LAYOUTS\Collabco\css\tile.cattendance.debug.css" />
+    <Content Include="LAYOUTS\Collabco\css\tile.students.debug.css" />
+    <Content Include="LAYOUTS\Collabco\css\tile.register.debug.css" />
+    <Content Include="LAYOUTS\Collabco\js\tile.cattendance.debug.js" />
+    <Content Include="LAYOUTS\Collabco\js\tile.students.debug.js" />
+    <Content Include="LAYOUTS\Collabco\js\tile.register.debug.js" />
+    <Content Include="LAYOUTS\Collabco\Services\MyCourseAttendanceEndPoint.aspx" />
+    <Content Include="LAYOUTS\Collabco\Services\MyRegistersEndPoint.aspx" />
+    <Content Include="LAYOUTS\Collabco\Services\MyStudentsEndPoint.aspx" />
+    <Content Include="MyCourseAttendance\Elements.xml" />
+    <Content Include="MyRegister\Elements.xml" />
+    <Content Include="MyStudents\Elements.xml" />
+    <Content Include="Tile Settings\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

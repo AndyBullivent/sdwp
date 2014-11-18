@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="MyDayBespokeTileSettings"
+    GroupId="Myday"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Title="Set up bespoke MyDay Tiles"
+    RequireSiteAdministrator="TRUE"
+    Description="Configure the datasources of My Students, My Registers and My Statistics" >
+    <UrlAction Url="~site/_layouts/15/Collabco/Settings/TileDatabaseSettings.aspx"/>
+  </CustomAction>
+</Elements>

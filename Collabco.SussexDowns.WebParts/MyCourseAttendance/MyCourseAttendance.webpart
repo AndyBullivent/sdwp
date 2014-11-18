@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Collabco.SussexDowns.WebParts.MyCourseAttendance.MyCourseAttendance, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">My Course Attendance</property>
+        <property name="Description" type="string">This tile will show you Attendance by Course Title</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/collabco/icons/sso16.gif</property>
+        <property name="ChromeType" type="chrometype">None</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
